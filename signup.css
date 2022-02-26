@@ -1,0 +1,204 @@
+:root {
+  --grey: #525461;
+  --grey2: #777a8b;
+  --black: #282a37;
+  --peach: #e74c32;
+  --white: #f1f0f0;
+}
+
+body {
+  margin: 0;
+}
+.outer-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--grey);
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  background-color: var(--black);
+  width: 70%;
+  border-radius: 15px;
+  height:80%;
+}
+
+.img {
+  width: 100%;
+  background: url("https://cdn.wallpapersafari.com/35/51/hcrmZq.jpg");
+  border-radius: 15px;
+}
+.shadow {
+  display: flex;
+  flex-direction: row;
+  height:100%;
+}
+.shadow1 {
+  background-color: var(--black);
+  width: 55%;
+  box-shadow: 13px 0px 8px 0px var(--black);
+  border-radius: 15px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--white);
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%;
+  margin: 25px 50px 40px 50px;
+}
+.logo {
+  width: 50px;
+}
+.png {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.link {
+  display: flex;
+}
+.page {
+  margin: 20px;
+  font-size: 11px;
+  color: var(--grey2);
+  font-weight: 600;
+}
+.page:hover{
+   color:var(--peach);
+}
+
+.texts {
+  margin: 15px 0 0 50px;
+  font-weight: 600;
+}
+
+.text1 {
+  font-size: 12px;
+  color: var(--grey2);
+  margin-bottom: 10px;
+}
+.text2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.text3 {
+  color: var(--grey2);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.log-in {
+  color: var(--peach);
+  text-decoration: none;
+}
+
+.log-in:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--peach);
+}
+
+.form {
+  width: 68%;
+  margin: 20px 50px 15px 50px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.background-form {
+  background-color: var(--grey);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding:3px 0 8px 0;
+}
+.background-form:hover{
+border: 2px solid var(--peach);
+}
+.form-name {
+  width: 45%;
+}
+.bothnames {
+  margin: 15px;
+  font-size: 8px;
+}
+#fname,
+#lname,#email,#password {
+  border-style: hidden;
+  background-color: inherit;
+  width: 45%;
+  margin: 0 0 0 15px;
+  font-size: 11px;
+}
+#email{
+width:80%;
+}
+#fname:focus,
+#lname:focus,
+#email:focus,
+#password:focus {
+  outline: none;
+}
+.btn-container {
+  display: flex;
+  margin-top:20px ;
+  justify-content: space-between;
+}
+.btn {
+  background-color: var(--peach);
+  font-size: 12px;
+  border-radius: 25px;
+  padding: 10px 5px 10px 5px;
+  width:45%;
+  text-align: center;
+}
+.btn:hover{
+    transform:scale(1.1) ;
+}
+#eye{
+margin-left: 35%;
+}
+.fa-address-book{
+    margin-left:12%;
+}
+
+.shadow2 {
+  opacity: 0.9;
+  background-color: var(--black);
+  width: 50%;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+@media only screen and (max-width:950px) {
+    .shadow1{
+width:100%;
+    }
+    .shadow2{
+        width:0;
+    }
+}
+
+.welcome{
+  margin:150px;
+  font-size: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+  animation-name: colourful;
+  animation-duration: 10s;
+
+}
+@keyframes colourful{
+  0%   {color: green;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: purple;}
+}
