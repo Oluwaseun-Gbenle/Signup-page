@@ -147,6 +147,12 @@ width:80%;
 #password:focus {
   outline: none;
 }
+.error-message{
+  color: red;
+font-size: 12px;
+text-align: center;
+}
+
 .btn-container {
   display: flex;
   margin-top:20px ;

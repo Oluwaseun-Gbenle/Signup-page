@@ -29,10 +29,10 @@
                 <div class="text1">START FOR FREE</div>
                 <div class="text2">Create new account</div>
                 <div class="text3">
-                  Don't have an account?<a href="signup.html" class="log-in"> Sign up</a>
+                  Don't have an account?<a href="index.html" class="log-in"> Sign up</a>
                 </div>
               </div>
-              <form class="form" onsubmit=enter()>
+              <form class="form"  onsubmit=login()>
                 <div class="email">
                   <div class="background-form">
                     <label class="bothnames" for="email">Email</label><br />
@@ -46,6 +46,7 @@
                     <input type="password" value="" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
                     <i class="bi bi-eye-slash" id="eye"></i>
                   </div>
+                  <p class="error-message"></p>
                 </div>
               <div class="btn-container">
                 <button class="btn">Login with google</button>

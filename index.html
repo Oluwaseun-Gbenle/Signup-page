@@ -32,7 +32,7 @@
                   Already have an account?<a href="login.html" class="log-in"> Log in</a>
                 </div>
               </div>
-              <form class="form" method="post" action="https://signup-page.gbenleseun.repl.co/api/signup" onsubmit=go()>
+              <form class="form"  onsubmit=enter()>
                 <div class="name">
                   <div class="background-form form-name">
                     <label class="bothnames" for="fname">First name</label
@@ -59,6 +59,7 @@
                     <input type="password" value="" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
                     <i class="bi bi-eye-slash" id="eye"></i>
                   </div>
+                  <p class="error-message"></p>
                 </div>
               <div class="btn-container">
                 <button class="btn">Sign up with google</button>
