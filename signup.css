@@ -28,31 +28,26 @@ body {
 
 .img {
   width: 100%;
-  background: url("https://cdn.wallpapersafari.com/35/51/hcrmZq.jpg");
+  background-image:linear-gradient(to left, rgba(43, 42, 42, 0.9),rgba(43, 42, 42), rgba(43, 42, 42) ),
+  url('https://cdn.wallpapersafari.com/35/51/hcrmZq.jpg');
   border-radius: 15px;
 }
 .shadow {
   display: flex;
   flex-direction: row;
-  height:100%;
 }
 .shadow1 {
-  background-color: var(--black);
-  width: 55%;
-  box-shadow: 13px 0px 8px 0px var(--black);
-  border-radius: 15px;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--white);
   cursor: pointer;
+  padding: 30px 50px 10px 50px;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 68%;
-  margin: 25px 50px 40px 50px;
+  width: 85%;
+  margin-bottom:40px;
 }
 .logo {
   width: 50px;
@@ -76,7 +71,7 @@ body {
 }
 
 .texts {
-  margin: 15px 0 0 50px;
+  margin-top: 15px;
   font-weight: 600;
 }
 
@@ -86,7 +81,7 @@ body {
   margin-bottom: 10px;
 }
 .text2 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 .text3 {
@@ -106,8 +101,8 @@ body {
 }
 
 .form {
-  width: 68%;
-  margin: 20px 50px 15px 50px;
+  width: 85%;
+  margin: 20px 0 15px 0;
 }
 .name {
   display: flex;
@@ -147,10 +142,25 @@ width:80%;
 #password:focus {
   outline: none;
 }
+.form-texts{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
 .error-message{
   color: red;
 font-size: 12px;
-text-align: center;
+text-align: left;
+}
+.forgotten{
+  font-size: 12px;
+  text-align: right;
+  color: var(--grey2);
+}
+.forgotten:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--grey2);
 }
 
 .btn-container {
@@ -171,28 +181,36 @@ text-align: center;
 }
 #eye{
 margin-left: 35%;
+position: relative;
+    top: -8px;
 }
 .fa-address-book{
     margin-left:12%;
 }
-
-.shadow2 {
-  opacity: 0.9;
-  background-color: var(--black);
-  width: 50%;
-  border-radius: 15px;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-}
-@media only screen and (max-width:950px) {
-    .shadow1{
-width:100%;
-    }
-    .shadow2{
-        width:0;
-    }
+.fa{
+    position: relative;
+    top: -8px;
 }
 
+@media only screen and (max-width:620px) {
+    .container{
+      width: 90%;
+      height: 90%;
+    }
+  }
+  @media only screen and (max-width:450px) {
+    .fa-envelope{
+     margin-left: -5%;
+    }
+    #eye{
+      margin-left: 27%;
+    }
+  }
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .welcome{
   margin:150px;
   font-size: 200px;
