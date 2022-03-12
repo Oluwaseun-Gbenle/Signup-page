@@ -52,7 +52,7 @@ function sendJSON() {
   // Sending data with the request
   xhr.send(data);
 }
-
+//create account
 async function enter() {
   let response = await fetch("https://signup-page.gbenleseun.repl.co/api/data");
   var data = await response.json();
@@ -61,7 +61,7 @@ async function enter() {
     if (a.email == emailValue) {
       console.log(a.email);
       console.log(emailValue);
-      return document.querySelector("error-message").innerHTML="User already exists"
+      return document.querySelector(".error-message").innerHTML="User already exists"
     } else return (window.location.href = "login.html");
   });
 }
@@ -81,5 +81,5 @@ async function login() {
     } else return document.querySelector(".error-message").innerHTML="Incorrect user details"
   });
 }
-//issues having to click alert many times
 //sign up page moving to login page regardless of condition.
+//create logo link
